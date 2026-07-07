@@ -65,10 +65,40 @@ This project covers critical concepts in ReactJS. With an interactive experience
  > Use the whole thing
 
 
+## JSX
 
+- HTML in JS
+
+- JSX = Javascript XML
+
+- XML is abbreviation for eXtensible Markup Language whereas HTML stands for Hypertext Markup Language. XML mainly focuses on transfer of data while HTML is focused on presentation of the data.
 
 
 ## Question and answer:
+What does JSX stand for in the context of React?
+ > JavaScript XML
+
+
+In JSX, how do you embed JavaScript expressions within markup?
+ > Enclose the expression in curly braces {}
+
+Which of the following statements about JSX is true?
+ > JSX is just syntactic sugar for function calls and objects.
+
+How can you create a new React app using Create React App?
+ > `npx create-react-app my-app`
+
+Which command is used to start the development server in a Create React App project?
+ > `npm start`
+
+What is the purpose of the public folder in a Create React App project?
+ > To contain static assets and public files
+
+What is the purpose of the src folder in a Create React App project?
+ > To contain the source code of the React application
+
+
+ 
 Which library is commonly used for building SPAs with ReactJS?
  > React Router
 
@@ -96,5 +126,14 @@ Which development approach is more likely to lead to reusable and modular code?
 Which of the following best describes the relationship between components in Component-focused development?
  > Loose coupling
 
+What file is commonly used to manage project dependencies in a React app?
+ > `package.json`
 
+In a React project, what file is responsible for defining the project's routes?
+ > `routes.js`
 
+What file is responsible for defining the structure and layout of a React component?
+ > `App.js`
+
+What is the purpose of the index.js file in a React project's component folder?
+  > Import and render the component

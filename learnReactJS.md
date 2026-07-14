@@ -137,3 +137,151 @@ What file is responsible for defining the structure and layout of a React compon
 
 What is the purpose of the index.js file in a React project's component folder?
   > Import and render the component
+
+What is a React component?
+ > A JavaScript function that returns a React element.
+
+What is the purpose of the render method in a class component in React?
+ > To render the component's UI elements.
+
+How do you define a functional component in React?
+ > Using the function keyword.
+
+How can you prevent the default behavior of a form submission in React?
+ > By using the event.preventDefault() method.
+
+In a controlled form component in React, where is the form data typically stored?
+ > In a controlled form component in React, where is the form data typically stored?
+
+What is the purpose of the value attribute in a controlled input element in React?
+ > It sets the initial value of the input field.
+
+What is the primary purpose of creating components in React?
+ > To organize and modularize the code for reusability
+
+When adding styles to a React component, which file extension is commonly used for the styles?
+ > .css
+
+What is the purpose of using Material icons in a web application?
+ > To provide a consistent set of scalable icons
+
+In React, how can you import an external component into another file?
+ > Using the import statement
+
+How can you dynamically display data in JSX?
+ > Using curly braces {} with JavaScript expressions
+
+What does the map function do in the context of dynamically displaying data in JSX?
+ > Iterates over an array and returns a new array
+
+How do you conditionally render content in JSX?
+ > By employing ternary operators or logical && operators
+
+What is the purpose of Props in ReactJS?
+ > To pass data from a parent component to a child component
+
+How do you pass props to a child component?
+ >Using this.props object
+
+Can props be modified inside a child component?
+ > No, props are immutable in child components
+
+What is the primary purpose of passing props to a React component?
+ > To pass data from a parent component to a child component
+
+In React, where are props typically defined and initialized for a child component?
+ > In the parent component's render method
+
+How can you access the values passed through props inside a functional component?
+ > Using props directly
+
+What is a key difference between arrow functions and regular functions in JavaScript?
+ > Arrow functions have a shorter syntax
+
+How do arrow functions handle the "this" keyword compared to regular functions?
+ > Arrow functions inherit "this" from their containing scope
+
+What happens when using the "arguments" object in an arrow function compared to a regular function?
+ > Arrow functions do not have access to the "arguments" object
+
+What is the purpose of event handling in React?
+ > Managing state changes
+
+What is the role of preventDefault in React event handling?
+ > Prevents the default browser behavior associated with the event
+
+What is the purpose of the bind method in React event handling?
+ > Binds the event handler to the React component instance
+
+How can you prevent the default behavior of an event in React?
+ > `event.preventDefault()`
+
+Which of the following is used to handle input changes in React?
+ > onChange
+
+In React, which method is commonly used for handling form submissions?
+ > onSubmit
+
+What is React state used for?
+ > To manage and store dynamic data in a component
+
+How is state initialized in a React component?
+ > Through the this.state object
+
+What function is used to update the state in React?
+ > setState
+
+What is the purpose of a form submit handler in React?
+ > To handle form submission and prevent default behavior
+
+In React, which method is commonly used to handle form submissions?
+ > onSubmit
+
+What is two-way binding in React forms?
+ > Keeping the state of form inputs in sync
+
+
+What is two-way binding in ReactJS?
+ > Data flow in two directions
+
+Which method is commonly used to implement two-way binding in React?
+ > setState()
+
+What is the main disadvantage of manually implementing two-way binding in React without using libraries like Redux or MobX?
+ > Increased complexity
+
+What is the purpose of the useState?
+ > To create stateful functional components
+
+How is state initialized using useState with objects?
+ > useState({})
+
+When using useState with objects, why is it important to update state immutably?
+ > It prevents unintended side effects
+
+ Which method is used for handling communication from child to parent component in React?
+  > Callback functions
+
+In React, how can sibling components communicate with each other?
+ > Shared state in a parent component
+
+Which React feature is suitable for global state management and communication across components?
+ > Redux
+
+What React feature is commonly used for rendering dynamic lists efficiently?
+ > map function
+
+When rendering a dynamic list in React, why is it recommended to provide a unique "key" prop for each list item?
+ > It helps React identify which items have changed, been added, or been removed
+
+What is the purpose of the useState hook when working with dynamic lists in React?
+ > 
+
+In React, what is the purpose of the && operator in JSX?
+ > It is used to create conditional rendering based on a logical condition.
+
+How does the && operator work in a React component's JSX for conditional rendering?
+ > It renders the element following it only if the condition is true.
+
+In a React component, how can you use the && operator to conditionally render a component based on a prop?
+ > `{this.props.condition && <ConditionalComponent />}`

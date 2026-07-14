@@ -1,0 +1,155 @@
+import React, { useState } from "react";
+
+import "./Form.css";
+
+const Form = (props) => {
+  // const [userInput, setUserInput] = useState({
+  //   title: "",
+  //   text: "",
+  // });
+
+  const [title, setTitle] = useState("");
+  const [text, setText] = useState("");
+
+  const formClickHandler = (event) => {
+    // alert("Open Modal!", event);
+  };
+  // setUserInput({ ...userInput, title: event.target.value });
+
+  // const titleChangeHandler = (event) => setUserInput((prevState) => {
+  //   return {
+  //     ...prevState,
+  //     title: event.target.value,
+  //   }
+  // });
+  const titleChangeHandler = (event) => setTitle(event.target.value);
+
+  // const textChangeHandler = (event) =>
+  //   setUserInput((prevState) => {
+  //     return {
+  //       ...prevState,
+  //       text: event.target.value,
+  //     }
+  //   });
+
+  const textChangeHandler = (event) => setText(event.target.value);
+
+  const submitFormHandler = (event) => {
+    event.preventDefault();
+    // add data to an array of notes
+    alert(`Title: ${title}, Text: ${text}`);
+    const notes = {
+      id: "",
+      title,
+      text,
+    };
+    // console.log(notes);
+    props.addNote(notes);
+    setTitle("");
+    setText("");
+  };
+  return (
+    <div>
+      <div className="form-container inactive-form" onClick={formClickHandler}>
+        <form>
+          <input
+            className="note-text"
+            type="text"
+            placeholder="Take a note..."
+          />
+          <div className="form-actions">
+            <div className="tooltip">
+              <span className="material-symbols-outlined hover">check_box</span>
+              <span className="tooltip-text">New List</span>
+            </div>
+            <div className="tooltip">
+              <span className="material-symbols-outlined hover">Brush</span>
+              <span className="tooltip-text">New Drawing</span>
+            </div>
+            <div className="tooltip">
+              <span className="material-symbols-outlined hover">image</span>
+              <span className="tooltip-text">New Image</span>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div className="form-container active-form">
+        <form onSubmit={submitFormHandler} className="form" id="form">
+          <input
+            onChange={titleChangeHandler}
+            type="text"
+            value={title}
+            id="note-title"
+            className="note-title"
+            placeholder="Title"
+          />
+          <input
+            onChange={textChangeHandler}
+            type="text"
+            value={text}
+            id="note-text"
+            className="note-text"
+            placeholder="Take a note..."
+          />
+          <div className="form-actions">
+            <div className="icons">
+              <div className="tooltip">
+                <span className="material-symbols-outlined hover small-icon">
+                  add_alert
+                </span>
+                <span className="tooltip-text">Remind me</span>
+              </div>
+              <div className="tooltip">
+                <span className="material-symbols-outlined hover small-icon">
+                  person_add
+                </span>
+                <span className="tooltip-text">Collaborator</span>
+              </div>
+              <div className="tooltip">
+                <span className="material-symbols-outlined hover small-icon">
+                  palette
+                </span>
+                <span className="tooltip-text">Change Color</span>
+              </div>
+              <div className="tooltip">
+                <span className="material-symbols-outlined hover small-icon">
+                  image
+                </span>
+                <span className="tooltip-text">Add Image</span>
+              </div>
+              <div className="tooltip">
+                <span className="material-symbols-outlined hover small-icon">
+                  archive
+                </span>
+                <span className="tooltip-text">Archive</span>
+              </div>
+              <div className="tooltip">
+                <span className="material-symbols-outlined hover small-icon">
+                  more_vert
+                </span>
+                <span className="tooltip-text">More</span>
+              </div>
+              <div className="tooltip">
+                <span className="material-symbols-outlined hover small-icon">
+                  undo
+                </span>
+                <span className="tooltip-text">Undo</span>
+              </div>
+              <div className="tooltip">
+                <span className="material-symbols-outlined hover small-icon">
+                  redo
+                </span>
+                <span className="tooltip-text">Redo</span>
+              </div>
+            </div>
+            <button type="submit" className="close-btn">
+              close
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  );
+};
+
+export default Form;
